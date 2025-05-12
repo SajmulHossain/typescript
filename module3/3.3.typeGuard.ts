@@ -3,7 +3,7 @@
 {
   type Num = string | number;
   const add = (param1: Num, param2: Num): Num => {
-    if (typeof param1 === "number" && typeof param1 === "number") {
+    if (typeof param1 === "number" && typeof param2 === "number") {
       return param1 + param2;
     } else {
       return param1.toString() + param2.toString();
@@ -40,5 +40,5 @@
     role: "admin",
   };
 
-  getUser(adminUser)
+  getUser(normalUser)
 }
