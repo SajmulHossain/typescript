@@ -35,11 +35,11 @@
   }
 
   //   * smart way to handle intance of
-  const isDog = (animal: Animal) => {
+  const isDog = (animal: Animal): animal is Dog => {
     return animal instanceof Dog;
   };
 
-  const isCat = (animal: Animal) => {
+  const isCat = (animal: Animal): animal is Cat => {
     return animal instanceof Cat;
   };
 
